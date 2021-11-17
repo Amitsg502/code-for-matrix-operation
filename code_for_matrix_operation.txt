@@ -1,0 +1,26 @@
+# Matrix Operations
+
+Row = int(input("Enter the no of Rows: "))
+Col = int(input("Enter the no of Columns: "))
+Matrix = []
+for i in range(Row):
+    a = []
+    for j in range(Col):
+        k = int(input("Enter the Numbers: "))
+        a.append(k)
+    Matrix.append(a)
+for i in range(Row):
+    for j in range(Col):
+        print(Matrix[i][j], end = " ")
+    print()    
+    
+
+# Transpose of a  Matrix
+
+for r in range(Row):
+    for c in range(Col):
+        Matrix[c][r] = Matrix[r][c]
+print(c)
+print("Transpose of Matrix is: ")
+for r in Matrix:
+    print(r)
